@@ -1,13 +1,14 @@
-from typing import Any, Dict, Optional, Hashable
-
+from jsonapi_pydantic.v1_0.links import Links as LinksObject
+from jsonapi_pydantic.v1_0.meta import Meta as MetaObject
+from jsonapi_pydantic.v1_0.resource.relationship import Relationship
 from pydantic.config import ConfigDict
 from pydantic.fields import Field
 from pydantic.functional_validators import model_validator
 from pydantic.main import BaseModel
-
-from jsonapi_pydantic.v1_0.links import Links as LinksObject
-from jsonapi_pydantic.v1_0.meta import Meta as MetaObject
-from jsonapi_pydantic.v1_0.resource.relationship import Relationship
+from typing import Any
+from typing import Dict
+from typing import Hashable
+from typing import Optional
 
 Id = Optional[str]
 Attributes = Optional[Dict[str, Any]]
